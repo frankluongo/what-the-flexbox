@@ -1,1 +1,47 @@
 @import 'styles/normalize';
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.box {
+  color: hsl(0, 0, 100%);
+
+  font-size: 2rem;
+  text-align: center;
+  text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+.box1 {
+  background-color: hsl(0, 0, 95%);
+}
+.box2 {
+  background-color: hsl(0, 0, 90%);
+}
+.box3 {
+  background-color: hsl(0, 0, 85%);
+}
+.box4 {
+  background-color: hsl(0, 0, 80%);
+}
+.box5 {
+  background-color: hsl(0, 0, 75%);
+}
+.box6 {
+  background-color: hsl(0, 0, 70%);
+}
+.box7 {
+  background-color: hsl(0, 0, 65%);
+}
+.box8 {
+  background-color: hsl(0, 0, 60%);
+}
+.box9 {
+  background-color: hsl(0, 0, 55%);
+}
+.box10 {
+  background-color: hsl(0, 0, 50%);
+}
