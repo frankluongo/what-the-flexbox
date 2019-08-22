@@ -50,16 +50,11 @@
 
 .container {
   display: flex;
+  // Justify Content will only work with columns if the item has an explicity height
+  justify-content: space-evenly;
+  flex-direction: column;
+
   min-height: 100vh;
+
   border: 10px solid goldenrod;
-}
-
-.box {
-  // Flex 1 will evenly space items across their container
-  flex: 1;
-}
-
-.box3 {
-  // This will move an item from its place in the DOM. Default order is 0 so any number will push the item to the end
-  order: 1;
 }
