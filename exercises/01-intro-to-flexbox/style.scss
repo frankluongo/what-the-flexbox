@@ -45,3 +45,16 @@
 .box10 {
   background-color: hsl(0, 0, 50%);
 }
+
+// Flexbox!
+
+.container {
+  // Container spans the full width
+  display: flex;
+  // Container only take up the width of the items
+  // display: inline-flex;
+
+  height: 100vh;
+
+  border: 10px solid goldenrod;
+}
