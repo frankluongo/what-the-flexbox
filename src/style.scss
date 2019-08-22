@@ -49,12 +49,17 @@
 // Flexbox!
 
 .container {
-  // Container spans the full width
+  // * Container spans the full width
   display: flex;
-  // Container only take up the width of the items
+  // * Container only take up the width of the items
   // display: inline-flex;
 
-  height: 100vh;
+  // * Organize items next to each other
+  flex-direction: row; // or row-reverse
+  // * Stack items of one another
+  // flex-direction: column; // or column-reverse
+
+  min-height: 100vh;
 
   border: 10px solid goldenrod;
 }
