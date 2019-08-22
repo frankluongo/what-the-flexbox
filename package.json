@@ -1,0 +1,9 @@
+{
+  "name": "what-the-flexbox",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.22.10"
+  }
+}
