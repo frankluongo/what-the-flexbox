@@ -50,48 +50,17 @@
 
 .container {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 100vh;
   border: 10px solid goldenrod;
 }
-/*
+
 .box {
-  // flex: 1;
-
-  // * When we have extra space, how much extra should this item take?
+  flex-basis: 250px;
   flex-grow: 1;
-
-  // *
-  // flex-shrink: ;
-
-  // *
-  // flex-basis: ;
-}
-*/
-
-.box1 {
-  // flex-basis: 400px;
-  // flex-grow: 10;
-  // flex-shrink: 10;
-  flex: 10 5 400px;
 }
 
-.box2 {
-  // flex-basis: 400px;
-  // flex-grow: 1;
-  flex: 1 1 400px;
+.box3 {
+  flex-grow: 10;
 }
-
-/*
-  * Flex
-    - flex: grow shrink basis;
-    - Shorthand for the three properties
-  * Flex Grow
-    - Default Flex grow is 0
-    - Flex Grow says, "how much of the available extra space should I take up?"
-  * Flex Shrink
-    - Default is 1
-    - Flex Shrink says, "How do we shrink down when the space we need is not available?"
-  * Flex Basis
-    - Default is auto
-    - Flex Basis says, "What is the ideal amount of space I will take up?"
-
-*/
