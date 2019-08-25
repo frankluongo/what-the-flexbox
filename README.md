@@ -19,7 +19,7 @@ Course By Wes Bos
 - Default is 1
 - Flex Shrink says, "How do we shrink down when the space we need is not available?"
 
-###11.4: Flex Basis
+### 11.4: Flex Basis
 
 - Default is auto
 - Flex Basis says, "What is the ideal amount of space I will take up?"
