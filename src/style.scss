@@ -63,67 +63,127 @@ footer {
   font-weight: 100;
 }
 
-.cover {
-  height: 100vh;
-  width: 100%;
+a.button {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.1);
 }
 
-/*Video*/
-
-.dog {
-  height: 100%;
-  -webkit-filter: blur(5px);
-  filter: blur(5px);
-  position: absolute;
-  top: 0;
-  z-index: -1;
+.app-wrap {
+  max-width: 540px;
+  height: 90vh;
+  margin: 5vh auto 5vh auto;
+  border: 10px solid rgba(0, 0, 0, 0.8);
+  border-bottom-width: 70px;
+  border-radius: 10px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
 }
 
-/*Hack to get them to align properly */
-.flex-form > *:not([type='date']) {
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
-}
-
-.flex-form input[type='submit'] {
-  background: #ff5a5f;
-  border-top: 1px solid #ff5a5f;
-  border-bottom: 1px solid #ff5a5f;
-  color: white;
-}
-
-.flex-form > * {
-  border: 0;
-  padding: 10px;
+.content {
+  padding: 20px;
   background: white;
-  line-height: 50px;
-  font-size: 20px;
-  border-radius: 0;
-  outline: 0;
-  border-right: 1px solid rgba(0, 0, 0, 0.2);
-  -webkit-appearance: none;
+  box-shadow: inset 0 5px 0 rgba(0, 0, 0, 0.1);
+  line-height: 1.6;
 }
 
-.flex-form > *:last-child {
-  border-right: 0;
+.content img {
+  max-width: 50%;
+  float: left;
+  margin-right: 10px;
 }
 
-/*Flexbox Starts Here*/
+.icon-bar a {
+  flex: 1;
+  text-align: center;
+  padding: 1.5rem;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  background: #efca51;
+  color: rgba(0, 0, 0, 0.5);
+}
 
-.cover {
+.icon-bar a:first-child {
+  border-left: 0;
+}
+
+.icon-bar a:first-child,
+.icon-bar a:hover {
+  border-bottom: 5px solid rgba(0, 0, 0, 0.1);
+}
+
+.icon-bar {
+  border-top: 1px solid #e6e6e6;
+}
+
+.icon-bar i {
+  display: block;
+  font-size: 2.5rem;
+  color: white;
+  text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
+  padding-bottom: 1rem;
+}
+
+.app-header {
+  background: #f0cb45;
+  color: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+}
+
+/*
+  Everything So far is Cosmetic styling
+  Flexbox + Important CSS Starts Here
+*/
+
+/*
+  Overall Layout
+*/
+
+.app-wrap {
+  display: flex;
+  flex-direction: column;
+  // flex-wrap: wrap;
+}
+
+.app-wrap > * {
+  flex: 1 1 auto;
+}
+
+// Header
+// --------------------------------------------------------
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.app-header a {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex: 1 1 auto;
+  height: 100%;
 }
 
-.flex-form {
+.app-header h1 {
+  flex: 2 0 auto;
+  padding: 0 1rem;
+}
+
+// Content
+// --------------------------------------------------------
+
+.content {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+// Icon Bar
+// --------------------------------------------------------
+
+.icon-bar {
   display: flex;
-
-  border: 2rem solid rgba(0, 0, 0, 0.3);
-  border-radius: 5px;
 }
 
-input[type='search'] {
-  flex: 1 1 500px;
-  min-width: 500px;
+.icon-bar a {
+  flex: 1;
 }
